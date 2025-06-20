@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fechas de las carreras de F1 y encuesta sobre la favorita del público.">
+  <meta name="author" content="Tu Nombre">
+  <title>F1 2025 - Fechas y Encuesta</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4f/Formula_One_logo.svg" type="image/svg+xml">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin: 0.5rem 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    thead {
+      background-color: #d4145a;
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: #f0f0f0;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    select, textarea, button {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏎️ Fechas de Grandes Premios F1 2025</h1>
+    <p>Consulta cuándo se correrán los principales circuitos y déjanos tu opinión</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>📅 Calendario de Carreras</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Circuito</th>
+            <th>Ubicación</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monza</td>
+            <td>Italia</td>
+            <td>7 de septiembre, 2025</td>
+          </tr>
+          <tr>
+            <td>Suzuka</td>
+            <td>Japón</td>
+            <td>12 de octubre, 2025</td>
+          </tr>
+          <tr>
+            <td>Silverstone</td>
+            <td>Reino Unido</td>
+            <td>6 de julio, 2025</td>
+          </tr>
+          <tr>
+            <td>Austin</td>
+            <td>EE. UU.</td>
+            <td>26 de octubre, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>📊 Encuesta: ¿Qué carrera te gustó más?</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="carrera-favorita">Carrera favorita:</label>
+        <select id="carrera-favorita" name="carrera-favorita" required>
+          <option value="">-- Selecciona una --</option>
+          <option value="Monza">Monza - Italia</option>
+          <option value="Suzuka">Suzuka - Japón</option>
+          <option value="Silverstone">Silverstone - Reino Unido</option>
+          <option value="Austin">Austin - EE. UU.</option>
+        </select>
+
+        <label for="comentario">¿Por qué te gustó esa carrera?</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe aquí tu comentario..."></textarea>
+
+        <button type="submit">Enviar respuesta</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 F1 Fans | Página creada para fines académicos</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #1f3db7;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #ff0000;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+}
+
+
+nav {
+  background-color: #1f1a1a;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e9e7e2;
+  background-color: #c54d4d;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.banner {
+  background-image: url('https://media.gq.com.mx/photos/67c6103a919293616f462920/16:9/w_2560%2Cc_limit/Fo%25CC%2581rmula_1_autos.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 40px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.banner h2 {
+  font-size: 24px;
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 5%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bloque-izq,
+.bloque-der {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.izq-img,
+.piloto-img {
+  flex: 1 1 45%;
+}
+
+.izq-img img,
+.piloto-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bloque-izq {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 3%;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000050;
+}
+
+.izq-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.izq-titulo h2 {
+  font-size: 28px;
+  color: #ffcc00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.izq-titulo h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #c54d4d;
+  font-style: italic;
+}
+
+.izq-img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.izq-img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.bloque-der {
+  width: 35%;
+  height: 100%;
+  background-color: #563232;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0 0 10px #00000050;
+}
+
+.der-titulo {
+  background-color: #cccccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.der-titulo h3 {
+  font-size: 20px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.der-pilotos {
+  background-color: #ff0000;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.piloto-img {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.piloto-img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.piloto-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque-izq,
+  .bloque-der {
+    width: 90%;
+  }
+
+  .der-pilotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .piloto-img {
+    width: 70%;
+  }
+}

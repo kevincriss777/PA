@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circuitos de Carrera</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .circuito {
+      background-color: #fff;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-left: 6px solid #ff3333;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideIn 1s forwards;
+    }
+
+    .circuito:nth-child(2) { animation-delay: 0.2s; }
+    .circuito:nth-child(3) { animation-delay: 0.4s; }
+    .circuito:nth-child(4) { animation-delay: 0.6s; }
+    .circuito:nth-child(5) { animation-delay: 0.8s; }
+
+    .imagen-circuito {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 1rem;
+    }
+
+    .circuit-card {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-left: 4px solid #555;
+    }
+
+    .circuit-card h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+    }
+
+    .circuit-card p {
+      margin: 0.3rem 0;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .flag {
+      display: inline-block;
+      width: 20px;
+      height: 14px;
+      background-size: cover;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .monza { background-image: url('https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg'); }
+    .suzuka { background-image: url('https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg'); }
+    .silverstone { background-image: url('https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg'); }
+    .austin { background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg'); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏎️ Circuitos de Carrera</h1>
+  </header>
+
+  <!-- MONZA -->
+  <div class="circuito">
+    <img src="https://www.foxsports.com.mx/resizer/v2/R65AAJNYNZFFHFHZXUVWMMB5MU.jpg?smart=true&auth=cf545be90b5be6a329a886c8c13e8e1156dd3b2e39c555e088d9e8b3c67bf6c9&width=1440&height=810" alt="Monza" class="imagen-circuito">
+    <div class="circuit-card">
+      <h2><span class="flag monza"></span>Monza</h2>
+      <p><strong>📍 Ubicación:</strong> Monza, Italia</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.6963052837327!2d9.281215876653532!3d45.61931632368152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786ba4b2f579fd7%3A0x7f96346d64c52e7d!2sAutodromo%20Nazionale%20Monza!5e0!3m2!1ses!2sit!4v1717848912342!5m2!1ses!2sit" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- SUZUKA -->
+  <div class="circuito">
+    <img src="https://lebalap.academy/wp-content/uploads/2021/02/image-7.png" alt="Suzuka" class="imagen-circuito">
+    <div class="circuit-card">
+      <h2><span class="flag suzuka"></span>Suzuka</h2>
+      <p><strong>📍 Ubicación:</strong> Suzuka, Japón</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.479724942663!2d136.5372888151639!3d34.84307458039625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600464f4d41a8dcf%3A0x80599f7d80f8ac7d!2sSuzuka%20International%20Racing%20Course!5e0!3m2!1ses!2ses!4v1620337405463!5m2!1ses!2ses" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- SILVERSTONE -->
+  <div class="circuito">
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Great_Britain_Circuit.png" alt="Silverstone" class="imagen-circuito">
+    <div class="circuit-card">
+      <h2><span class="flag silverstone"></span>Silverstone</h2>
+      <p><strong>📍 Ubicación:</strong> Northamptonshire, Reino Unido</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.449191853815!2d-1.0224883843897837!3d52.07326737973137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487708c9b9ef62c7%3A0xd32cfbc378d69f98!2sSilverstone%20Circuit!5e0!3m2!1ses!2ses!4v1620337340211!5m2!1ses!2ses" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- AUSTIN -->
+  <div class="circuito">
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/USA_Circuit.png" alt="Austin" class="imagen-circuito">
+    <div class="circuit-card">
+      <h2><span class="flag austin"></span>Circuit of the Americas</h2>
+      <p><strong>📍 Ubicación:</strong> Austin, Texas, EE. UU.</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.914785271832!2d-97.63615358450973!3d30.132181581844616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5df06e1cd81%3A0x23b
