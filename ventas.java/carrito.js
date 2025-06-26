@@ -1,4 +1,4 @@
-// Productos disponibles
+
 const products = [
     { 
         id: 1, 
@@ -46,7 +46,7 @@ const products = [
 
 let cart = [];
 
-// Mostrar productos
+
 function showProducts() {
     const container = document.getElementById('products');
     container.innerHTML = '';
@@ -119,7 +119,6 @@ function updateCart() {
     totalElement.textContent = total;
 }
 
-// Cambiar cantidad
 function changeQuantity(id, change) {
     const item = cart.find(item => item.id === id);
     if (item) {
@@ -132,18 +131,17 @@ function changeQuantity(id, change) {
     }
 }
 
-// Eliminar item
 function removeItem(id) {
     cart = cart.filter(item => item.id !== id);
     updateCart();
 }
 
-// Ir al carrito
+
 function scrollToCart() {
     document.querySelector('.cart-section').scrollIntoView({ behavior: 'smooth' });
 }
 
-// Finalizar compra
+
 function checkout() {
     if (cart.length === 0) {
         alert('Tu carrito está vacío');
@@ -157,6 +155,6 @@ function checkout() {
     updateCart();
 }
 
-// Inicialización
+
 showProducts();
 updateCart();
